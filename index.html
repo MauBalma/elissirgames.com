@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elissir Games</title>
+  <meta name="description" content="Elissir Games. Site under construction.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* --bg matches the concept art's backdrop so the image has no visible edge */
+      --bg: #bbbbbb;
+      --ink: #1c1a19;
+      --red: #e03a2f;
+      --cream: #f6f0e6;
+      --display: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .tape {
+      flex: none;
+      height: 26px;
+      background: repeating-linear-gradient(-45deg, var(--red) 0 20px, var(--ink) 20px 40px);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      padding: 2rem 16px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: var(--display);
+      font-weight: 400;
+      font-size: clamp(3.2rem, 11vw, 6.5rem);
+      line-height: .85;
+      letter-spacing: .03em;
+    }
+
+    h1 span { color: var(--red); }
+
+    .hero {
+      display: block;
+      height: min(50vh, 460px);
+      max-width: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .status {
+      display: inline-block;
+      padding: .4em 1em .3em;
+      background: var(--ink);
+      color: var(--cream);
+      font-family: var(--display);
+      font-size: clamp(1.4rem, 4.5vw, 2rem);
+      letter-spacing: .08em;
+      border-left: 8px solid var(--red);
+      border-right: 8px solid var(--red);
+      transform: rotate(-2deg);
+    }
+
+    .contact {
+      font-size: 1rem;
+      overflow-wrap: anywhere;
+    }
+
+    .contact a {
+      color: var(--ink);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: var(--red);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+
+    .contact a:hover { color: var(--red); }
+
+    footer {
+      padding: 0 16px 1rem;
+      text-align: center;
+      font-size: .8rem;
+      opacity: .7;
+    }
+  </style>
+</head>
+<body>
+  <div class="tape" aria-hidden="true"></div>
+
+  <main>
+    <h1>Elissir <span>Games</span></h1>
+    <img class="hero" src="firefighter.webp" width="1400" height="1600"
+         alt="Elissir Games concept art: a muscular firefighter in a red cap">
+    <p class="status">Page under construction</p>
+    <p class="contact">Contact: <a href="mailto:mauriciobalmaceda@elissirgames.com">mauriciobalmaceda@elissirgames.com</a></p>
+  </main>
+
+  <footer>© 2026 Elissir Games</footer>
+
+  <div class="tape" aria-hidden="true"></div>
+</body>
+</html>
